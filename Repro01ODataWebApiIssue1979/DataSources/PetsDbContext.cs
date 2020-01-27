@@ -22,7 +22,7 @@ namespace Repro01ODataWebApiIssue1979.DataSources
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Data Source = (LocalDb)\MSSQLLocalDB; Integrated Security = True; Persist Security Info = True; Database = PetsDb");
+                optionsBuilder.UseSqlServer(@"Data Source = (LocalDb)\MSSQLLocalDB; Integrated Security = True; Persist Security Info = True; Database = Repro01PetsDb");
             }
         }
 

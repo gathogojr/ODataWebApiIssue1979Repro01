@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Repro01ODataWebApiIssue1979
+namespace ODataWebApiIssue1979Repro01
 {
     public class Program
     {

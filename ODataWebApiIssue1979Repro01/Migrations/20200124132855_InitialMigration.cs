@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Repro01ODataWebApiIssue1979.Migrations
+namespace ODataWebApiIssue1979Repro01.Migrations
 {
     public partial class InitialMigration : Migration
     {

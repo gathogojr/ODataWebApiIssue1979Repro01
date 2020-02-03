@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Repro01ODataWebApiIssue1979.DataSources;
+using ODataWebApiIssue1979Repro01.DataSources;
 
-namespace Repro01ODataWebApiIssue1979.Migrations
+namespace ODataWebApiIssue1979Repro01.Migrations
 {
     [DbContext(typeof(PetsDbContext))]
     [Migration("20200124132855_InitialMigration")]
@@ -21,7 +21,7 @@ namespace Repro01ODataWebApiIssue1979.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Repro01ODataWebApiIssue1979.Models.Person", b =>
+            modelBuilder.Entity("ODataWebApiIssue1979Repro01.Models.Person", b =>
                 {
                     b.Property<int>("ShadowId")
                         .HasColumnType("int");
@@ -40,7 +40,7 @@ namespace Repro01ODataWebApiIssue1979.Migrations
                     b.ToTable("Persons");
                 });
 
-            modelBuilder.Entity("Repro01ODataWebApiIssue1979.Models.Pet", b =>
+            modelBuilder.Entity("ODataWebApiIssue1979Repro01.Models.Pet", b =>
                 {
                     b.Property<int>("ShadowId")
                         .HasColumnType("int");
@@ -66,11 +66,11 @@ namespace Repro01ODataWebApiIssue1979.Migrations
                     b.ToTable("Pets");
                 });
 
-            modelBuilder.Entity("Repro01ODataWebApiIssue1979.Models.Pet", b =>
+            modelBuilder.Entity("ODataWebApiIssue1979Repro01.Models.Pet", b =>
                 {
-                    b.HasOne("Repro01ODataWebApiIssue1979.Models.Person", "Owner")
+                    b.HasOne("ODataWebApiIssue1979Repro01.Models.Person", "Owner")
                         .WithOne()
-                        .HasForeignKey("Repro01ODataWebApiIssue1979.Models.Pet", "ShadowId", "OwnerId");
+                        .HasForeignKey("ODataWebApiIssue1979Repro01.Models.Pet", "ShadowId", "OwnerId");
                 });
 #pragma warning restore 612, 618
         }

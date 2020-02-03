@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Repro01ODataWebApiIssue1979.Models
+namespace ODataWebApiIssue1979Repro01.Models
 {
     public partial class Person
     {

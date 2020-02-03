@@ -1,7 +1,7 @@
-﻿using Repro01ODataWebApiIssue1979.Models;
+﻿using ODataWebApiIssue1979Repro01.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Repro01ODataWebApiIssue1979.DataSources
+namespace ODataWebApiIssue1979Repro01.DataSources
 {
     public partial class PetsDbContext : DbContext
     {

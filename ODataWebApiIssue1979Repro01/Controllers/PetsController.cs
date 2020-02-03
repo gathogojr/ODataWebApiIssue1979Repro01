@@ -1,9 +1,9 @@
-﻿using Repro01ODataWebApiIssue1979.DataSources;
-using Repro01ODataWebApiIssue1979.Models;
+﻿using ODataWebApiIssue1979Repro01.DataSources;
+using ODataWebApiIssue1979Repro01.Models;
 using Microsoft.AspNet.OData;
 using System.Linq;
 
-namespace Repro01ODataWebApiIssue1979.Controllers
+namespace ODataWebApiIssue1979Repro01.Controllers
 {
     public class PetsController: ODataController
     {
